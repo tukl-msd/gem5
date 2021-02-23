@@ -432,6 +432,8 @@ def addFSOptions(parser):
                       default="linux",
                       help="Specifies type of OS to boot")
     parser.add_option("--script", action="store", type="string")
+    parser.add_option("--serverbench", action="store", type="string")
+    parser.add_option("--clientbench", action="store", type="string")
     parser.add_option("--frame-capture", action="store_true",
             help="Stores changed frame buffers from the VNC server to compressed "\
             "files in the gem5 output directory")
